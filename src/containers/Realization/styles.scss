@@ -1,0 +1,162 @@
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html{
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+ol, ul {
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a, a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after{clear: both;}
+
+.left {float: left}
+.right {float: right}
+.text-right{text-align: right}
+.text-center{text-align: center}
+
+.center{
+  width: 1230px;
+  margin: 0 auto;
+}
+
+.ideas {
+  height: 872px;
+  width: 100%;
+  background: #fbfaf8;
+
+  & h3 {
+    padding-top: 85px;
+    padding-bottom: 24px;
+    color: #555555;
+    font-family: "Raleway";
+    font-size: 30px;
+    font-weight: 400;
+  }
+  & p {
+    margin-bottom: 40px;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+}
+
+.img {
+  width: 1230px;
+  height: 482px;
+  margin: 0 auto;
+
+  & img {
+    position: absolute;
+
+  }
+  & .centerImg{
+    z-index: 10;
+
+  }
+  & .leftImg {
+    top: 82px;
+    left: -229px;
+    position: relative;
+  }
+
+  & .rightImg {
+    position: relative;
+    right: -230px;
+    top: -322px;
+  }
+}
+
+.ideas-f{
+  width: 100%;
+  height: 150px;
+  background: url(../../assets/backgroundResFoot.png);
+
+  & h3 {
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 28px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+      }
+  & span {
+    color: #c7b299;
+  }
+  & p {
+    color: #615855;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  & a {
+    float: right;
+  }
+  & button {
+    float: right;
+    margin-top: 50px;
+    margin-right: 30px;
+    width: 173px;
+    height: 53px;
+    color: #ffffff;
+    font-family: bold 14px/23px "Raleway";
+    text-transform: uppercase;
+    box-shadow: inset 0 -3px 0 #736357;
+    border-radius: 3px;
+    border: none;
+    background-color: #998675;
+    cursor: pointer;
+  }
+
+  & button:hover{
+    background-color: #c7b299;
+  }
+}
+
+.ideas-text{
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 30px;
+  height: 100px;
+}

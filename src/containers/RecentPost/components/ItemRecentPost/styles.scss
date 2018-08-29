@@ -1,0 +1,136 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html{
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+ol, ul {
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a, a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after{clear: both;}
+
+.left {float: left}
+.right {float: right}
+.text-right{text-align: right}
+.text-center{text-align: center}
+
+.center{
+  width: 1230px;
+  margin: 0 auto;
+}
+
+#ItemRecentPost{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  position: relative;
+  width: 370px;
+
+  margin-right: 30px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  background-color: #fbfaf8;
+
+  & img{
+    width: 370px;
+    height: 220px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  & h3 {
+    margin-top: 30px;
+    margin-left: 30px;
+    color: #555555;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  & p{
+    margin: 0px 0 25px 30px;
+    color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+
+  &:hover{
+    background-color: #362f2d;
+  }
+  &:hover img{
+    opacity: 0.3;
+  }
+  &:hover p{
+    color: #ffffff;
+  }
+  &:hover h3{
+    color: #c7b299;
+  }
+}
+
+#ItemRecentPost:nth-child(3n){
+  margin-right: 0;
+}
+
+#readMoreRecent{
+  margin-left: 30px;
+  margin-bottom: 30px;
+  text-align: left;
+
+  & img{
+    display: inline-block;
+    width: 5px;
+    height: 8px;
+    margin-left: 7px;
+  }
+
+  & a{
+    float: left;
+    color: #c7b299;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+}
+
